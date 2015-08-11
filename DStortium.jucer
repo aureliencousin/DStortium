@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="yWBYJ0" name="DStortium" projectType="audioplug" version="1.0.0"
+              bundleIdentifier="com.aureliencousin.DStortium" includeBinaryInAppConfig="1"
+              buildVST="1" buildVST3="1" buildAU="0" buildRTAS="0" buildAAX="0"
+              pluginName="DStortium" pluginDesc="Assymetric Distortion Plugin"
+              pluginManufacturer="Aur&#233;lien Cousin" pluginManufacturerCode="Manu"
+              pluginCode="Ywby" pluginChannelConfigs="{2, 2}" pluginIsSynth="0"
+              pluginWantsMidiIn="0" pluginProducesMidiOut="0" pluginSilenceInIsSilenceOut="0"
+              pluginEditorRequiresKeys="0" pluginAUExportPrefix="DStortium1.0.0"
+              pluginRTASCategory="" aaxIdentifier="com.aureliencousin.DStortium"
+              pluginAAXCategory="AAX_ePlugInCategory_Dynamics" jucerVersion="3.2.0">
+  <MAINGROUP id="hgni02" name="DStortium">
+    <GROUP id="{1F84AC21-6B1B-3DAD-5904-8460C969D3C5}" name="Source">
+      <GROUP id="{5B1BA728-4C86-7799-62B3-1F86104F9605}" name="ThreadQueue">
+        <FILE id="LG7lmM" name="Common.h" compile="0" resource="0" file="Source/ThreadQueue/Common.h"/>
+        <FILE id="Okl95q" name="bond.h" compile="0" resource="0" file="Source/ThreadQueue/bond.h"/>
+        <FILE id="je2ElX" name="ThreadQueue.cpp" compile="1" resource="0" file="Source/ThreadQueue/ThreadQueue.cpp"/>
+        <FILE id="gnKgQp" name="ThreadQueue.h" compile="0" resource="0" file="Source/ThreadQueue/ThreadQueue.h"/>
+      </GROUP>
+      <FILE id="B1Vq40" name="PluginProcessor.cpp" compile="1" resource="0"
+            file="Source/PluginProcessor.cpp"/>
+      <FILE id="B6zlP7" name="PluginProcessor.h" compile="0" resource="0"
+            file="Source/PluginProcessor.h"/>
+      <FILE id="lnpRVG" name="PluginEditor.cpp" compile="1" resource="0"
+            file="Source/PluginEditor.cpp"/>
+      <FILE id="DimX71" name="PluginEditor.h" compile="0" resource="0" file="Source/PluginEditor.h"/>
+    </GROUP>
+  </MAINGROUP>
+  <EXPORTFORMATS>
+    <VS2008 targetFolder="Builds/VisualStudio2008" vstFolder="C:\Users\Acacia\Documents\VST3 SDK"
+            vst3Folder="C:\Users\Acacia\Documents\VST3 SDK" rtasFolder="c:\SDKs\PT_80_SDK">
+      <CONFIGURATIONS>
+        <CONFIGURATION name="Debug" winWarningLevel="4" generateManifest="1" isDebug="1"
+                       optimisation="1" targetName="DStortium" headerPath="C:\Program Files\Microsoft SDKs\Windows\v7.1\Include"
+                       postbuildCommand="copy /Y &quot;$(TargetPath)&quot; &quot;C:\Program Files (x86)\VstPlugins&quot;"/>
+        <CONFIGURATION name="Release" winWarningLevel="4" generateManifest="1" isDebug="0"
+                       optimisation="3" targetName="DStortium" headerPath="C:\Program Files\Microsoft SDKs\Windows\v7.1\Include"
+                       postbuildCommand="copy /Y &quot;$(TargetPath)&quot; &quot;C:\Program Files (x86)\VstPlugins&quot;"/>
+        <CONFIGURATION name="Release x64" winWarningLevel="4" generateManifest="1" targetName="DStortium_x64"
+                       optimisation="3" headerPath="C:\Program Files\Microsoft SDKs\Windows\v7.1\Include"
+                       postbuildCommand="copy /Y &quot;$(TargetPath)&quot; &quot;C:\Program Files (x86)\VstPlugins&quot;"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_core" path="../../../JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../../../JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="../../../JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../../JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../../JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../../../JUCE/modules"/>
+        <MODULEPATH id="juce_cryptography" path="../../../JUCE/modules"/>
+        <MODULEPATH id="juce_video" path="../../../JUCE/modules"/>
+        <MODULEPATH id="juce_opengl" path="../../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_basics" path="../../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_plugin_client" path="../../../JUCE/modules"/>
+      </MODULEPATHS>
+    </VS2008>
+  </EXPORTFORMATS>
+  <MODULES>
+    <MODULES id="juce_audio_basics" showAllCode="1" useLocalCopy="0"/>
+    <MODULES id="juce_audio_devices" showAllCode="1" useLocalCopy="0"/>
+    <MODULES id="juce_audio_formats" showAllCode="1" useLocalCopy="0"/>
+    <MODULES id="juce_audio_plugin_client" showAllCode="1" useLocalCopy="0"/>
+    <MODULES id="juce_audio_processors" showAllCode="1" useLocalCopy="0"/>
+    <MODULES id="juce_core" showAllCode="1" useLocalCopy="0"/>
+    <MODULES id="juce_cryptography" showAllCode="1" useLocalCopy="0"/>
+    <MODULES id="juce_data_structures" showAllCode="1" useLocalCopy="0"/>
+    <MODULES id="juce_events" showAllCode="1" useLocalCopy="0"/>
+    <MODULES id="juce_graphics" showAllCode="1" useLocalCopy="0"/>
+    <MODULES id="juce_gui_basics" showAllCode="1" useLocalCopy="0"/>
+    <MODULES id="juce_gui_extra" showAllCode="1" useLocalCopy="0"/>
+    <MODULES id="juce_opengl" showAllCode="1" useLocalCopy="0"/>
+    <MODULES id="juce_video" showAllCode="1" useLocalCopy="0"/>
+  </MODULES>
+  <JUCEOPTIONS JUCE_QUICKTIME="disabled"/>
+</JUCERPROJECT>
